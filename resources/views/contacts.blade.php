@@ -9,11 +9,7 @@
 <body>
     <main>
         <h1>I contatti di riferimento sono i seguenti:</h1>
-            <ul>
-                @foreach ($contacts in $contact)
-                    <li> {{ @contact }} </li>
-                    @endforeach
-            </ul>
+
     </main>
 </body>
 </html>
