@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+ 
+
+    $array = [
+
+        'links' => [
+            'Home', 'Contacts', 'Support', 'Work With Us',
+        ],
+        'contacts' => [
+            'Fabrizio tel 3464453543', 'Mauro tel 23622832982', 'Giovanni ha rotto il telefono'
+        ],
+        'Work' => [
+            'Gianna Rais, tel. 343444444'
+        ],
+        'Support' => [
+            'info@support.it'
+        ]
+        
+    ];
+
+    return view('home', 'contacts', 'support', 'work_with_us', $array);
 });
